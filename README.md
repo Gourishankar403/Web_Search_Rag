@@ -1,12 +1,12 @@
 
-````md
+
 # Adaptive Web RAG Chatbot
 
 An intelligent system that can **crawl any website and answer questions about it** using an Adaptive Retrieval-Augmented Generation (RAG) pipeline.
 
----
 
-##Features
+
+# Features
 
 -Multi-page website crawling  
 -Adaptive RAG (query refinement + reranking + routing)  
@@ -16,11 +16,10 @@ An intelligent system that can **crawl any website and answer questions about it
 -  Multi-website support (URL-specific storage)  
 -  Interactive chat UI using Streamlit  
 
----
 
-##  How It Works
+## How It Works:
 
-```text
+
 User Input (URL)
         ↓
 Website Crawling (multi-page)
@@ -39,65 +38,43 @@ Adaptive Retrieval:
 LLM (Groq)
         ↓
 Final Answer (with chat memory)
-````
-
----
-
-## Setup Instructions
-
-### 1. Clone the Repository : https://github.com/Gourishankar403/Web_Search_Rag
-
-```bash
 
 
-### 2. Install Dependencies
+# Setup Instructions
+ 1. Clone the Repository : https://github.com/Gourishankar403/Web_Search_Rag
 
-```bash
-pip install -r requirements.txt
-```
 
----
 
-### 3. Get Groq API Key
+ 2. Install Dependencies:
+    pip install -r requirements.txt
+ 3. Get Groq API Key
 
 This project uses Groq LLM for fast inference.
 
 1. Go to [https://console.groq.com](https://console.groq.com)
 2. Sign up / log in
 3. Generate an API key
-
----
-
-### 4. Create `.env` File
+4. Create `.env` File
 
 In the root directory, create a `.env` file:
 
-```env
+
 GROQ_API_KEY=your_api_key_here
-```
 
----
 
-### 5. Run the Application
+5. Run the Application
 
-```bash
+
 streamlit run app/app.py
-```
-
----
-
-## Usage
-
+ Usage
 1. Enter a website URL
 2. Click **Process Website**
 3. Ask questions about the content
 4. Continue chatting with memory
 
----
+# Project Structure
 
-##  Project Structure
 
-```
 web_rag_agent/
 │
 ├── app/                 # Streamlit UI
@@ -109,22 +86,20 @@ web_rag_agent/
 ├── config/              # Settings
 ├── utils/               # Helpers
 ├── tests/               # Testing
-```
 
----
-
-##  Note
+-
+## Note
 
 * Some websites may block scraping
 * Large websites may take longer to process
 * Ensure your `.env` file is properly configured
 * API key is required for generating responses
 
----
 
 
 
-## 🛠️ Tech Stack
+
+## Tech Stack
 
 * Python
 * FAISS
@@ -133,7 +108,7 @@ web_rag_agent/
 * Streamlit
 * BeautifulSoup
 
----
+
 
 ## Future Improvements
 
@@ -143,13 +118,12 @@ web_rag_agent/
 * Async crawling for speed
 * UI enhancements
 
----
 
 ## Contributing
 
 Feel free to fork this repo and improve it!
 
----
+
 
 ## If You Like This Project
 
