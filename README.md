@@ -66,7 +66,8 @@ GROQ_API_KEY=your_api_key_here
 
 
 streamlit run app/app.py
- Usage
+ 
+6. Usage
 1. Enter a website URL
 2. Click **Process Website**
 3. Ask questions about the content
