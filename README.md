@@ -75,19 +75,9 @@ streamlit run app/app.py
 # Project Structure
 
 
-web_rag_agent/
-│
-├── app/                 # Streamlit UI
-├── core/                # LLM + retrieval + adaptive logic
-├── ingestion/           # Web scraping + parsing + chunking
-├── vectorstore/         # FAISS + embeddings
-├── services/            # Main pipeline orchestration
-├── data/db/             # Stored vector databases
-├── config/              # Settings
-├── utils/               # Helpers
-├── tests/               # Testing
 
--
+
+
 ## Note
 
 * Some websites may block scraping
